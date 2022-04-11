@@ -1,0 +1,6 @@
+[user]
+	name = gonzs
+	email = gonzalosisnero@gmail.com
+[alias]
+	lg = log --decorate --all --oneline --graph
+	s = status -s -b
