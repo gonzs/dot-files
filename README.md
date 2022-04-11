@@ -97,6 +97,8 @@ git config --global user.name < USERNAME > &&
 git config --global user.email < EMAIL > &&
 git config --global --list
 ```
+### Add Git Alias
+Replace `~/.gitconfig` file with [this](#./.gitconfig).
 ### Generate SSH key
 
 [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
