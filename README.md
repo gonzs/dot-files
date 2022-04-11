@@ -1,4 +1,4 @@
-# dot-files
+# MacOS Starter
 Guide to configure work environment in MacOS
 #### Table of Contents
 - [dot-files](#dot-files)
