@@ -33,7 +33,7 @@ Guide to configure work environment in MacOS
 
 This script includes installation of tools and applications. More packages can be added using [https://formulae.brew.sh/](https://formulae.brew.sh/) as reference.
 
-[brew-install.sh](#brew-install.sh)
+[brew-install.sh](./brew-install.sh)
 ## Customization of the Terminal
 ### Install Oh My ZSH
 
