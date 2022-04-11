@@ -13,10 +13,10 @@ Guide to configure work environment in MacOS
   - [NVM](#nvm)
   - [Git and Github](#git-and-github)
     - [Git configuration](#git-configuration)
+    - [Add Git Alias](#add-git-alias)
     - [Generate SSH key](#generate-ssh-key)
   - [VS Code](#vs-code)
   - [AWS credentials](#aws-credentials)
-  - [Kelsus Setup](#kelsus-setup)
 
 ## Compatibility with Apple Silicon
 ### Install Rosetta 2
@@ -98,7 +98,7 @@ git config --global user.email < EMAIL > &&
 git config --global --list
 ```
 ### Add Git Alias
-Replace `~/.gitconfig` file with [this](#./.gitconfig).
+Replace `~/.gitconfig` file with [this](./.gitconfig).
 ### Generate SSH key
 
 [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -110,5 +110,3 @@ Sync with github account and install font https://github.com/tonsky/FiraCode.
 Install AWS-CLI [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 Check ~/.aws* files
-
-## Kelsus Setup
