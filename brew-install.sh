@@ -30,6 +30,14 @@ brew install zsh
 
 #Apps
 brew install --cask iterm2
+brew install --cask slack
+brew install --cask docker
+brew install --cask postman
+brew install --cask dbeaver-community
+brew install --cask notion
+brew install --cask microsoft-office
+brew install --cask visual-studio-code
+brew install --cask google-chrome
 
 # Remove outdated versions from the cellar.
 brew cleanup
