@@ -1,8 +1,6 @@
 # MacOS Starter
 Guide to configure work environment in MacOS
 #### Table of Contents
-- [dot-files](#dot-files)
-      - [Table of Contents](#table-of-contents)
   - [Compatibility with Apple Silicon](#compatibility-with-apple-silicon)
     - [Install Rosetta 2](#install-rosetta-2)
     - [Install HomeBrew](#install-homebrew)
