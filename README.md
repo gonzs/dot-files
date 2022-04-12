@@ -1,5 +1,6 @@
-# MacOS Starter
-Guide to configure work environment in MacOS
+# Development Environment Setup
+Guide(Checklist) to configure work environment for MacOS.
+
 #### Table of Contents
   - [Compatibility with Apple Silicon](#compatibility-with-apple-silicon)
     - [Install Rosetta 2](#install-rosetta-2)
