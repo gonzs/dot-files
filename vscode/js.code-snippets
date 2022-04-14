@@ -18,7 +18,7 @@
 
 	"Print log": {
 		"scope": "javascript,typescript",
-		"prefix":"log",
+		"prefix":"clg",
 		"body": [
 			"console.log('................. LOG .................');",
 			"console.log('INFO',$1);",
