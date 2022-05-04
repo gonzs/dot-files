@@ -84,7 +84,7 @@ export NVM_DIR="$HOME/.nvm"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm wd docker)
+plugins=(git nvm wd fd docker command-not-found aws npm zsh-autosuggestions zsh-syntax-highlighting) 
 
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section

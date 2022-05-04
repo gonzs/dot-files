@@ -12,6 +12,7 @@ Guide(Checklist) to configure work environment for MacOS.
     - [Install Powerlevel10k](#2-install-powerlevel10k)
     - [Install Spaceship theme](#3-install-spaceship-theme)
     - [Install Powerline Fonts](#4-install-powerline-fonts)
+    - [Install custom plugins](#5-install-custom-plugins)
   - [NVM](#nvm)
   - [Git and Github](#git-and-github)
     - [Git configuration](#git-configuration)
@@ -72,6 +73,13 @@ cd fonts &&
 ./install.sh &&
 cd ..
 rm -rf fonts
+```
+### 5. Install Custom Plugins
+Clone the plugin repository to `/.oh-my-zsh/custom}/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
+- [Autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
+- [Syntax Highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
+``` bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ## NVM
