@@ -1,46 +1,49 @@
 {
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "git.autofetch": true,
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontWeight": "500",
+  "editor.fontSize": 13,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.guides.bracketPairs": true,
+  "explorer.confirmDragAndDrop": false,
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.iconTheme": "vscode-icons",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command"
+  ],
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "git.confirmSync": false,
-  "terminal.integrated.fontFamily": "Fira Code",
-  "gitlens.gitCommands.skipConfirmations": ["fetch:command", "switch:command"],
-  "workbench.colorTheme": "Cobalt2",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.fontSize": 13,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.alwaysShowStatus": true,
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.guides.bracketPairs": true,
-  "workbench.sideBar.location": "right",
-  "window.menuBarVisibility": "compact",
-  "editor.formatOnSave": true,
-  "eslint.format.enable": true
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.menuBarVisibility": "compact"
 }
