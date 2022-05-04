@@ -42,7 +42,10 @@ This [script](./brew-install.sh) includes installation of tools and applications
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-### 2. Install Powerlevel10k
+### 2. Install Theme
+Choose one.
+
+#### 2.a [Powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
 ```bash
 git clone --depth=1 [https://github.com/romkatv/powerlevel10k.git](https://github.com/romkatv/powerlevel10k.git) ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -50,8 +53,7 @@ git clone --depth=1 [https://github.com/romkatv/powerlevel10k.git](https://githu
 
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"`in `~/.zshrc`.
 
-[Repo](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
-### 3. Install Spaceship theme
+#### 2.b [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#homebrew)
 
 ```bash
 git clone [https://github.com/spaceship-prompt/spaceship-prompt.git](https://github.com/spaceship-prompt/spaceship-prompt.git) "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
@@ -63,9 +65,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 Set `ZSH_THEME="spaceship"`in your `.zshrc`.
 
-[Repo](https://github.com/spaceship-prompt/spaceship-prompt#homebrew)
-
-### 4. Install Powerline Fonts
+### 3. Install Powerline Fonts
 
 ```bash
 git clone https://github.com/powerline/fonts.git --depth=1 &&
@@ -74,7 +74,7 @@ cd fonts &&
 cd ..
 rm -rf fonts
 ```
-### 5. Install Custom Plugins
+### 4. Install Custom Plugins
 Clone the plugin repository to `/.oh-my-zsh/custom}/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
 - [Autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
 - [Syntax Highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
