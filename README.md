@@ -10,8 +10,7 @@ Guide(Checklist) to configure work environment for MacOS.
   - [Customization of the Terminal](#customization-of-the-terminal)
     - [Install Oh My ZSH](#1-install-oh-my-zsh)
     - [Install Theme](#2-install-theme)
-    - [Install Powerline Fonts](#3-install-powerline-fonts)
-    - [Install Custom Plugins](#4-install-custom-plugins)
+    - [Install Custom Plugins](#3-install-custom-plugins)
   - [NVM](#nvm)
   - [Git and Github](#git-and-github)
     - [Git configuration](#git-configuration)
@@ -52,6 +51,16 @@ git clone --depth=1 [https://github.com/romkatv/powerlevel10k.git](https://githu
 
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"`in `~/.zshrc`.
 
+Install Powerline Fonts (optional)
+
+```bash
+git clone https://github.com/powerline/fonts.git --depth=1 &&
+cd fonts &&
+./install.sh &&
+cd ..
+rm -rf fonts
+```
+
 #### 2.b [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt#homebrew)
 
 ```bash
@@ -64,16 +73,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 Set `ZSH_THEME="spaceship"`in your `.zshrc`.
 
-### 3. Install Powerline Fonts
-
-```bash
-git clone https://github.com/powerline/fonts.git --depth=1 &&
-cd fonts &&
-./install.sh &&
-cd ..
-rm -rf fonts
-```
-### 4. Install Custom Plugins
+### 3. Install Custom Plugins
 Clone the plugin repository to `/.oh-my-zsh/custom}/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
 - [Autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
 - [Syntax Highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
