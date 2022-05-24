@@ -38,6 +38,7 @@ brew install --cask notion
 brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask google-chrome
+brew install --cask maccy
 
 # Remove outdated versions from the cellar.
 brew cleanup
