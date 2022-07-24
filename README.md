@@ -106,13 +106,24 @@ git config --global user.email < EMAIL > &&
 git config --global --list
 ```
 ### Add Git Alias
-Replace `~/.gitconfig` file with [this](./.gitconfig).
+Replace `~/.gitconfig` file with [this](./.gitconfig) one.
 ### Generate SSH key
 [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ## VS Code
 Sync with github account and install font [FiraCode](https://github.com/tonsky/FiraCode).
 Or use `settings.json` [file](vscode/settings.json).
+
 ## AWS credentials
 Install AWS-CLI following this [guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-
 Check `~/.aws*` files
+
+## NPM Registry
+To managing multiple profiles with different registries, use npmrc package.
+```bash
+npm i npmrc -g
+npmrc -c [new-profile]
+npmrc [new-profile] 
+npm config set registry [registry-url]
+npmrc default
+```
