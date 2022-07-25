@@ -18,6 +18,7 @@ Guide(Checklist) to configure work environment for MacOS.
     - [Generate SSH key](#generate-ssh-key)
   - [VS Code](#vs-code)
   - [AWS credentials](#aws-credentials)
+  - [NPM Registry](#npm-registry)
 
 ## Compatibility with Apple Silicon
 ### Install Rosetta 2
