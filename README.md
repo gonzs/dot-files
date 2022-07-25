@@ -69,7 +69,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 Set `ZSH_THEME="spaceship"`in your `.zshrc`.
 
 ### 3. Install Custom Plugins
-Clone the plugin repository to `/.oh-my-zsh/custom}/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
+Clone the plugin repository to `/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
 - [Autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
 - [Syntax Highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
 ``` bash
