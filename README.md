@@ -27,13 +27,7 @@ Guide(Checklist) to configure work environment for MacOS.
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 ## Install Applications with Homebrew
-### 1. Install HomeBrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-### 2. Run bash script
-This [script](./brew-install.sh) includes installation of tools and applications. More packages can be added using [HomeBrew Formulae](https://formulae.brew.sh/) as reference.
+This [script](./brew-install.sh) includes installation of HomeBrew, tools and applications. More packages can be added using [HomeBrew Formulae](https://formulae.brew.sh/) as reference.
 
 ## Customization of the Terminal
 ### 1. Install Oh My ZSH
