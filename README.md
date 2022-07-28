@@ -15,8 +15,8 @@ Guide(Checklist) to configure work environment for MacOS.
     - [Add Git Alias](#add-git-alias)
     - [Generate SSH key](#generate-ssh-key)
   - [VS Code](#vs-code)
-  - [AWS credentials](#aws-credentials)
   - [NPM Registry](#npm-registry)
+  - [AWS credentials](#aws-credentials)
 
 ## Compatibility with Apple Silicon
 ### Install Rosetta 2
@@ -107,10 +107,6 @@ Replace `~/.gitconfig` file with [this](./.gitconfig) one.
 Sync with github account and install font [FiraCode](https://github.com/tonsky/FiraCode).
 Or use `settings.json` [file](vscode/settings.json).
 
-## AWS credentials
-Install AWS-CLI following this [guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-Check `~/.aws*` files
-
 ## NPM Registry
 To managing multiple profiles with different registries, use npmrc package.
 ```bash
@@ -120,3 +116,7 @@ npmrc [new-profile]
 npm config set registry [registry-url]
 npmrc default
 ```
+
+## AWS credentials
+Install AWS-CLI following this [guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+Check `~/.aws*` files
