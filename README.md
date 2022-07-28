@@ -5,8 +5,6 @@ Guide(Checklist) to configure work environment for MacOS.
   - [Compatibility with Apple Silicon](#compatibility-with-apple-silicon)
     - [Install Rosetta 2](#install-rosetta-2)
   - [Install Applications with Homebrew](#install-applications-with-homebrew)
-    - [1. Install HomeBrew](#1-install-homebrew)
-    - [2. Run bash script](#2-run-bash-script)
   - [Customization of the Terminal](#customization-of-the-terminal)
     - [Install Oh My ZSH](#1-install-oh-my-zsh)
     - [Install Theme](#2-install-theme)
