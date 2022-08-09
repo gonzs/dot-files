@@ -5,8 +5,6 @@ Guide(Checklist) to configure work environment for MacOS.
   - [Compatibility with Apple Silicon](#compatibility-with-apple-silicon)
     - [Install Rosetta 2](#install-rosetta-2)
   - [Install Applications with Homebrew](#install-applications-with-homebrew)
-    - [1. Install HomeBrew](#1-install-homebrew)
-    - [2. Run bash script](#2-run-bash-script)
   - [Customization of the Terminal](#customization-of-the-terminal)
     - [Install Oh My ZSH](#1-install-oh-my-zsh)
     - [Install Theme](#2-install-theme)
@@ -17,6 +15,7 @@ Guide(Checklist) to configure work environment for MacOS.
     - [Add Git Alias](#add-git-alias)
     - [Generate SSH key](#generate-ssh-key)
   - [VS Code](#vs-code)
+  - [NPM Registry](#npm-registry)
   - [AWS credentials](#aws-credentials)
 
 ## Compatibility with Apple Silicon
@@ -26,13 +25,7 @@ Guide(Checklist) to configure work environment for MacOS.
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 ## Install Applications with Homebrew
-### 1. Install HomeBrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-### 2. Run bash script
-This [script](./brew-install.sh) includes installation of tools and applications. More packages can be added using [HomeBrew Formulae](https://formulae.brew.sh/) as reference.
+This [script](./brew-install.sh) includes installation of HomeBrew, tools and applications. More packages can be added using [HomeBrew Formulae](https://formulae.brew.sh/) as reference.
 
 ## Customization of the Terminal
 ### 1. Install Oh My ZSH
@@ -74,7 +67,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 Set `ZSH_THEME="spaceship"`in your `.zshrc`.
 
 ### 3. Install Custom Plugins
-Clone the plugin repository to `/.oh-my-zsh/custom}/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
+Clone the plugin repository to `/plugins/` folder and enable the plugin by adding the entry to `.zshrc` file.
 - [Autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
 - [Syntax Highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
 ``` bash
@@ -106,13 +99,24 @@ git config --global user.email < EMAIL > &&
 git config --global --list
 ```
 ### Add Git Alias
-Replace `~/.gitconfig` file with [this](./.gitconfig).
+Replace `~/.gitconfig` file with [this](./.gitconfig) one.
 ### Generate SSH key
 [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ## VS Code
 Sync with github account and install font [FiraCode](https://github.com/tonsky/FiraCode).
 Or use `settings.json` [file](vscode/settings.json).
+
+## NPM Registry
+To managing multiple profiles with different registries, use npmrc package.
+```bash
+npm i npmrc -g
+npmrc -c [new-profile]
+npmrc [new-profile] 
+npm config set registry [registry-url]
+npmrc default
+```
+
 ## AWS credentials
 Install AWS-CLI following this [guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-
 Check `~/.aws*` files
