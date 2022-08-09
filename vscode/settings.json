@@ -1,11 +1,12 @@
 {
+  "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Cobalt2",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.sideBar.location": "right",
+  "vsicons.dontShowNewVersionMessage": true,
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
-  "editor.fontWeight": "500",
+  "editor.fontWeight": "400",
   "editor.fontSize": 13,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
@@ -14,13 +15,28 @@
     "source.fixAll.eslint": true
   },
   "editor.guides.bracketPairs": true,
+  "editor.experimental.stickyScroll.enabled": true,
   "explorer.confirmDragAndDrop": false,
-  "vsicons.dontShowNewVersionMessage": true,
   "git.autofetch": true,
   "git.confirmSync": false,
-  "gitlens.gitCommands.skipConfirmations": [
-    "fetch:command",
-    "switch:command"
+  "git.ignoreRebaseWarning": true,
+  "gitlens.gitCommands.skipConfirmations": ["fetch:command", "switch:command"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.menuBarVisibility": "compact",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "WARN",
+    "DISABLED",
+    "PENDING"
   ],
   "eslint.alwaysShowStatus": true,
   "eslint.codeAction.showDocumentation": {
@@ -33,17 +49,17 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "terminal.integrated.fontFamily": "Fira Code",
-  "security.workspace.trust.untrustedFiles": "open",
-  "window.menuBarVisibility": "compact"
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
 }
