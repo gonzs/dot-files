@@ -1,8 +1,12 @@
 {
+  // workbench
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Cobalt2",
-  "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.productIconTheme": "fluent-icons",
+
+  // editor
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
@@ -10,22 +14,77 @@
   "editor.fontSize": 13,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "never"
   },
   "editor.guides.bracketPairs": true,
-  "editor.experimental.stickyScroll.enabled": true,
-  "explorer.confirmDragAndDrop": false,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.largeFileOptimizations": false,
+
+  // git
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.ignoreRebaseWarning": true,
+  "git.suggestSmartCommit": false,
+  "githubPullRequests.pullBranch": "never",
   "gitlens.gitCommands.skipConfirmations": ["fetch:command", "switch:command"],
-  "diffEditor.ignoreTrimWhitespace": false,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  // eslint&prettier
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "prettier.arrowParens": "avoid",
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // imports
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+
+  // terminal
   "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.explorerKind": "external",
+
+  // miscelanious
+  "redhat.telemetry.enabled": false,
+  "CodeGPT.query.language": "English",
+  "liveServer.settings.donotShowInfoMsg": true,
   "security.workspace.trust.untrustedFiles": "open",
   "window.menuBarVisibility": "compact",
+  "explorer.confirmDragAndDrop": false,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -38,28 +97,6 @@
     "DISABLED",
     "PENDING"
   ],
-  "eslint.alwaysShowStatus": true,
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "eslint.format.enable": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.env.osx": {}
 }
